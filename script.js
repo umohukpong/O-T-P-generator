@@ -23,12 +23,12 @@ function generateOTPs() {
     }
   } while (oddNumbersOTP.length < 5);
 
-  let evenOtp = "";
-  let oddOtp = "";
+  let evenOtp = "-";
+  let oddOtp = "-";
 
   for (let i = 0; i < 5; i++) {
-    evenOtp += evenNumbersOTP[i];
-    oddOtp += oddNumbersOTP[i];
+    evenOtp += evenNumbersOTP[i] + " - ";
+    oddOtp += oddNumbersOTP[i] + " - ";
   }
 
   document.getElementById("evenOtp").textContent = evenOtp;

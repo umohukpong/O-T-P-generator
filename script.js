@@ -1,7 +1,6 @@
 document.getElementById("generateBtn").addEventListener("click", generateOTPs);
 
 function generateOTPs() {
-  const otp = [];
   const evenNumbersOTP = [];
   const oddNumbersOTP = [];
 
